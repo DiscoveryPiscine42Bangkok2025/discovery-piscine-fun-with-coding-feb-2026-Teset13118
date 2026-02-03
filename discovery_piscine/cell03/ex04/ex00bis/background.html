@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <button id="btn">Click me!</button>
+    <script>
+        function randomColor() {
+            const r1 = Math.floor(Math.random() * 256);
+            const r2 = Math.floor(Math.random() * 256);
+            const r3 = Math.floor(Math.random() * 256);
+            document.body.style.backgroundColor = `rgb(${r1}, ${r2}, ${r3})`;
+        }
+
+        $("#btn").click(function () {
+            randomColor()
+        })
+    </script>
+</body>
+
+</html>

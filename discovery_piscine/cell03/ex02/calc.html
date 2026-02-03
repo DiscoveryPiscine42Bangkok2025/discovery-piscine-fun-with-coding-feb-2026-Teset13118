@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .leftInput {
+        height: 40px;
+        width: 150px;
+        font-size: 24px;
+    }
+
+    .rightInput {
+        height: 40px;
+        width: 150px;
+        font-size: 24px;
+    }
+
+    .operators {
+        width: fit-content;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    option {
+        font-size: 24px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <input type="number" class="leftInput">
+    <select class="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" class="rightInput">
+    <button type="button" onclick="calc()">Try me!</button>
+    <script>
+        function calc() {
+            const left = Number(document.querySelector(".leftInput").value);
+            const right = Number(document.querySelector(".rightInput").value);
+            const operator = document.querySelector(".operators").value;
+
+            let result
+            switch (operator) {
+                case "+":
+                    result = left + right; break;
+                case "-":
+                    result = left - right; break;
+                case "*":
+                    result = left * right; break;
+                case "/":
+                    result = left / right; break;
+                case "%":
+                    result = left % right; break;
+            }
+
+            if (operator == "/" || operator == "%" && result == 0) {
+                alert("It’s over 9000!")
+                console.log(result)
+            } else if (left < 0 || right < 0) {
+                alert("Error :)");
+            } else {
+                alert(result)
+                console.log(result)
+            }
+        }
+
+        setInterval(() => {
+            alert("Please, use me...");
+        }, 30000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .balloon {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        border-style: solid;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div onclick="ColorForward(), plus()" onmouseleave="minus(), ColorBackward()" class="balloon">
+
+    </div>
+    <script>
+        let count = 0
+        const colors = ["red", "green", "blue"];
+        function ColorForward() {
+            count += 1
+            if (count == 3) {
+                count = 0
+            }
+            document.querySelector(".balloon").style.backgroundColor = colors[count];
+        }
+        function ColorBackward() {
+            count -= 1
+            if (count == -1) {
+                count = 2
+            }
+            document.querySelector(".balloon").style.backgroundColor = colors[count];
+        }
+
+        let size = 200;
+        function plus() {
+            size += 10
+            if (size > 420) {
+                size = 200
+            }
+            document.querySelector(".balloon").style.width = size + "px";
+            document.querySelector(".balloon").style.height = size + "px";
+        }
+
+        function minus() {
+            if (size > 200) {
+                size -= 5
+            }
+            document.querySelector(".balloon").style.width = size + "px";
+            document.querySelector(".balloon").style.height = size + "px";
+        }
+    </script>
+</body>
+
+</html>
