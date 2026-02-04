@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio | 8-Bit Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+        body {
+            background-image: radial-gradient(#333 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .pixel-card {
+            box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+            transition: all 0.1s;
+        }
+
+        .pixel-card:hover {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
+        }
+
+        .pixel-text-shadow {
+            text-shadow: 4px 4px 0px #ff0000;
+        }
+
+        @keyframes whale {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(15px); }
+        }
+
+        .animate-whale {
+            animation: whale 2.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="text-white min-h-screen flex flex-col justify-center py-10 bg-[#202124] font-['Press_Start_2P']">
+
+    <div class="text-center w-full mb-10">
+        <h1 class="text-4xl md:text-6xl pixel-text-shadow mb-4">SELECT PLAYER</h1>
+        <p class="text-[10px] text-yellow-400 animate-pulse">INSERT COIN TO START</p>
+    </div>
+
+    <div class="flex flex-col xl:flex-row gap-12 justify-center items-center px-6">
+
+        <a href="CV1.html"
+            class="pixel-card flex flex-col items-center py-10 w-full max-w-[350px] bg-white text-black border-8 border-black">
+            <div class="relative mb-6">
+                <img src="pic/Picture1.jpg" alt="Phum"
+                    class="animate-whale size-48 rounded-none border-8 border-black object-cover bg-gray-200">
+                <div class="absolute -top-4 -right-4 bg-red-500 text-white px-2 py-1 text-[10px]">P-1</div>
+            </div>
+            <h1 class="text-2xl font-bold mt-4 uppercase">Phum</h1>
+            <div class="mt-4 flex gap-2">
+                <span class="h-4 w-4 bg-green-500 animate-bounce [animation-delay:0ms]"></span>
+                <span class="h-4 w-4 bg-green-500 animate-bounce [animation-delay:150ms]"></span>
+                <span class="h-4 w-4 bg-gray-300 animate-bounce [animation-delay:300ms]"></span>
+            </div>
+        </a>
+
+        <a href="/"
+            class="pixel-card flex flex-col items-center py-10 w-full max-w-[350px] bg-white text-black border-8 border-black">
+            <div class="relative mb-6">
+                <img src="pic/Picture1.jpg" alt="Folk"
+                    class="animate-whale size-48 rounded-none border-8 border-black object-cover bg-gray-200"
+                    style="animation-delay: 0.5s;">
+                <div class="absolute -top-4 -right-4 bg-blue-500 text-white px-2 py-1 text-[10px]">P-2</div>
+            </div>
+            <h1 class="text-2xl font-bold mt-4 uppercase">Folk</h1>
+            <div class="mt-4 flex gap-2">
+                <span class="h-4 w-4 bg-yellow-500 animate-bounce [animation-delay:0ms]"></span>
+                <span class="h-4 w-4 bg-yellow-500 animate-bounce [animation-delay:150ms]"></span>
+                <span class="h-4 w-4 bg-yellow-500 animate-bounce [animation-delay:300ms]"></span>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+
+</html>
