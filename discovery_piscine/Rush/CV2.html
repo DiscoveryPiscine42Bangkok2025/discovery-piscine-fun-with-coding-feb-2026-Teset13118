@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body class="bg-gray-900 text-white font-['Press_Start_2P']">
+    <nav class="fixed w-full flex z-20 font-bold bg-red-500 border-b-[6px] border-red-800 shadow-xl">
+        <a href="index.html" class="block text-sm p-5 hover:bg-red-600 transition">Home</a>
+        <a href="#about" class="block text-sm p-5 hover:bg-red-600 transition">About</a>
+        <a href="#showcase" class="block text-sm p-5 hover:bg-red-600 transition">Showcase</a>
+        <a href="#contact" class="block text-sm p-5 hover:bg-red-600 transition">Contact</a>
+    </nav>
+
+    <section id="about" class="py-25 min-h-screen flex flex-col items-center justify-center bg-red-600 relative">
+        <div class="flex w-full justify-end mr-30">
+            <h2 class="text-6xl font-black text-white">About Me</h2>
+        </div>
+
+        <div class="mx-auto px-6 flex flex-col md:flex-row items-center justify-evenly gap-10">
+            <div class="bg-white p-10 max-w-xl relative">
+                <div class="text-xl md:text-2xl font-bold text-gray-800">
+                    <p class="mb-4 text-red-600 text-3xl font-black">Hello I'm <span class="text-blue-600">FOLK</span></p>
+                    <p class="mb-4 text-gray-700">
+                        I'm very interested in art, whether it's digital or physical paper, and importantly, I really like Korean artists.
+                    </p>
+                    <p class="mt-6 text-gray-400 text-lg font-medium border-t-2 border-dashed border-gray-200 pt-4 items-center">
+                        GOT7 - NCT DREAM - NCT 127
+                    </p>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="absolute inset-0 bg-yellow-400 rounded-[2.5rem] rotate-3"></div>
+                <img src="pic\Picture2.jpg" alt="My Photo" 
+                    class="relative w-64 h-64 md:w-80 md:h-80 rounded-4xl border-8 border-white shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="py-25 min-h-screen flex flex-col items-center justify-center bg-blue-700">
+        <div class="flex">
+            <h2 class="text-6xl mb-8 text-yellow-300">Concert Experience</h2>
+        </div>
+    
+        <div class="flex flex-row items-center justify-center gap-8 mb-12 w-full mx-auto max-w-7xl">
+            <div class="w-full">
+                <button class="w-full relative bg-blue-600 hover:bg-blue-500 text-white font-black py-4 px-6 rounded-2xl 
+                        border-b-8 border-blue-800 shadow-lg flex justify-between items-center group">
+                    <span class="flex items-center gap-2">
+                        <span class="w-4 h-4 bg-white/30 rounded-full"></span> GOT7
+                    </span>
+                </button>
+                <div id="frontend" class="bg-blue-50 border-x-4 border-b-4 border-blue-800 rounded-b-2xl p-4">
+                    <ul class="space-y-2 text-blue-900 font-bold">
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-gray-500 rounded-full"></span>2018 NESTIVAL</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <button class="w-full relative bg-yellow-400 hover:bg-yellow-300 text-white font-black py-4 px-6 rounded-2xl 
+                        border-b-8 border-yellow-600 shadow-lg flex justify-between items-center group">
+                    <span class="flex items-center gap-2">
+                        <span class="w-4 h-4 bg-white/30 rounded-full"></span> NCT DREAM
+                    </span>
+                </button>
+                <div id="backend" class="bg-green-50 border-x-4 border-b-4 border-yellow-800 rounded-b-2xl p-4">
+                    <ul class="space-y-2 text-yellow-700 font-bold">
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-gray-500 rounded-full"></span>2019 THE DREAM SHOW</li>
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-gray-500 rounded-full"></span>2024 THE DREAM SHOW 3</li>
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-gray-500 rounded-full"></span>2025 THE DREAM SHOW 4</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <button class="w-full relative bg-red-600 hover:bg-red-500 text-white font-black py-4 px-6 rounded-2xl 
+                        border-b-8 border-red-800 shadow-lg flex justify-between items-center group">
+                    <span class="flex items-center gap-2">
+                        <span class="w-4 h-4 bg-white/30 rounded-full"></span> NCT 127
+                    </span>
+                </button>
+                <div id="db-devops" class="bg-purple-50 border-x-4 border-b-4 border-red-800 rounded-b-2xl p-4">
+                    <ul class="space-y-2 text-red-900 font-bold">
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-gray-500 rounded-full"></span>2024 THE UNITY</li>
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-gray-500 rounded-full"></span>2025 THE MOMENTUM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="pt-25 pb-5 bg-yellow-300">
+        <div class="flex justify-center gap-30 items-center pt-10">
+            <div class="flex">
+                <h2 class="text-6xl mb-10 text-red-600">Contect</h2>
+            </div>
+
+            <div class="flex flex-col justify-center gap-6">
+                <a href="https://github.com/parncheeva" target="_blank" 
+                    class="w-full relative bg-blue-600 hover:bg-blue-500 text-white font-black py-4 px-6 rounded-2xl 
+                    border-b-8 border-blue-800 shadow-lg flex items-center">GitHub</a>
+                <a href="https://www.instagram.com/r_e__m___/" target="_blank" 
+                    class="w-full relative bg-blue-600 hover:bg-blue-500 text-white font-black py-4 px-6 rounded-2xl 
+                    border-b-8 border-blue-800 shadow-lg flex items-center">Instagram</a>
+                <a href="https://www.facebook.com/smtruethailand" target="_blank" 
+                    class="w-full relative bg-blue-600 hover:bg-blue-500 text-white font-black py-4 px-6 rounded-2xl 
+                    border-b-8 border-blue-800 shadow-lg flex items-center">Facebook</a>
+            </div>
+        </div>
+        <p class="mt-20 text-[10px] text-gray-500 text-center">&copy; 2026 Parncheeva Soommart</p>
+    </section>
+
+</body>
+</html>
